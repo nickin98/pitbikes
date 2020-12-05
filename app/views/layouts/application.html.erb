@@ -9,7 +9,9 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body id="main_wrapper">
+    <%= render partial: 'landing/header' %>
     <%= yield %>
+    <%= render partial: 'landing/footer' %>
   </body>
 </html>

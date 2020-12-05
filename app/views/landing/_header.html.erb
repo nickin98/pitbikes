@@ -1,3 +1,25 @@
-<div id="header">
-  
-</div>
+<header id="header">
+  <div class="container">
+    <div id="logo">
+      iPitbike
+    </div>
+    <div id="menu">
+      <ul class="main_menu">
+        <li><%= link_to "Цены", "#price" %></li>
+        <li><%= link_to "F.A.Q.", "#price" %></li>
+        <li><%= link_to "Отзывы", "#reviews" %></li>
+        <li><%= link_to "Контакты", "#contacts" %></li>
+      </ul>
+    </div>
+    <div id="header_contacts">
+      <div class="phone_number">
+        <%= link_to "+79122864339", "tel:+7(912)286-43-39" %>
+      </div>
+      <div class="social_networks">
+        <div class="social social_instagram"></div>
+        <div class="social social_vk"></div>
+        <div class="social social_yt"></div>
+      </div>
+    </div>
+  </div>
+</header>
