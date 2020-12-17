@@ -1,3 +1,42 @@
 <div id="main_page">
-  
+  <div class="container">
+    <container class="faq-block">
+      <div class="container-faq">
+        <h2 class="title-faq">ВОЗМОЖНО, ТЕБЕ БУДЕТ ПОЛЕЗНО УЗНАТЬ:</h2>
+        <div class="text-faq">Нам часто задают эти вопросы,<br>поэтому мы оформили их в памятку</div>
+        <div class="content-faq">
+          <div class="block-faq" onclick="slide(this)">
+            <div class="title-content-faq">
+              <div class="title-content-text">Я разбил лицо что делать?</div>
+              <div class="content-icon" data-icon="rotate"></div>
+            </div>
+            <div class="description-content-faq hidden" data-block="hidden">И что? Купишь новое! И что? Купишь новое! И что? Купишь новое! И что?<br>Купишь новое! И что? Купишь новое!</div>
+          </div>
+          <div class="block-faq" onclick="slide(this)">
+            <div class="title-content-faq">
+              <div class="title-content-text">Я разбил лицо что делать?</div>
+              <div class="content-icon" data-icon="rotate"></div>
+            </div>
+            <div class="description-content-faq hidden" data-block="hidden">И что? Купишь новое! И что? Купишь новое! И что? Купишь новое! И что?<br>Купишь новое! И что? Купишь новое!</div>
+          </div>
+          <div class="block-faq" onclick="slide(this)">
+            <div class="title-content-faq">
+              <div class="title-content-text">Я разбил лицо что делать?</div>
+              <div class="content-icon" data-icon="rotate"></div>
+            </div>
+            <div class="description-content-faq hidden" data-block="hidden">И что? Купишь новое! И что? Купишь новое! И что? Купишь новое! И что?<br>Купишь новое! И что? Купишь новое!</div>
+          </div>
+        </div>
+      </div>
+    </container>
+  </div>
 </div>
+
+<script>
+  function slide(el) {
+    let hiddenBlock = el.querySelector('[data-block="hidden"]');
+    let rotateIcon = el.querySelector('[data-icon="rotate"]');
+    hiddenBlock.classList.toggle('hidden');
+    rotateIcon.classList.toggle('rotate');
+  }
+</script>
