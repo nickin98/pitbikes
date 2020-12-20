@@ -168,17 +168,43 @@ h2 {
 
       }
       .price-list-description {
-        height: 400px;
-        width: 200vw;
-        margin-left: -50vh;
-        background-color: #171717;
+        position: relative;
         .price-list {
-          .price {
-
+          position: relative;
+          .select-hours {
+            position: absolute;
+            right: 0;
+            top: 5px;
+            color: #fff;
+            li {
+              padding: 5px;
+              margin-bottom: 5px;
+              text-align: center;
+              font-weight: 600;
+              cursor: pointer;
+              border: 1px solid #fff;
+              &:hover {
+                border: 1px solid #fbc81f;
+              }
+              &.active {
+                color: #fbc81f;
+                border: 1px solid #fbc81f;
+                cursor: default;
+              }
+            }
           }
           .price-description {
-            
+            height: 200px;
           }
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 200vw;
+          margin-left: -50vh;
+          background-color: #171717;
+          z-index: -10;
         }
       }
     }
