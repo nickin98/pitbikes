@@ -157,10 +157,35 @@ h2 {
 
 #main_page {
   min-height: calc(100vh - 100px);
+  .container {
+     width: 760px;
+     margin: 40px auto 0;
+  }
+
+  .price-block {
+    .container-price {
+      .title-price {
+
+      }
+      .price-list-description {
+        height: 400px;
+        width: 200vw;
+        margin-left: -50vh;
+        background-color: #171717;
+        .price-list {
+          .price {
+
+          }
+          .price-description {
+            
+          }
+        }
+      }
+    }
+  }
+
   .faq-block {
     .container-faq {
-      width: 760px;
-      margin: 40px auto 0;
       .title-faq {
         text-align: center;
       }
@@ -246,6 +271,7 @@ h2 {
       }
     }
   }
+
 }
 
 #footer {
